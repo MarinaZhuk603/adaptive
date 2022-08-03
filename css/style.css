@@ -155,10 +155,11 @@ table {
 .title::before {
     content: "";
     position: absolute;
-    left: 262px;
     bottom: 0;
     height: 1px;
     width: 500px;
+    left: 50%;
+    transform: translateX(-50%);
     border-bottom: 1px solid #005BBB;
 }
 .history-card {
@@ -271,7 +272,6 @@ and (max-width: 1199px) {
     }
     .title::before {
         width: 452px;
-        left: 113px;
     }
     .history-card {
         flex-direction: column;
